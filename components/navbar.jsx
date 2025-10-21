@@ -31,7 +31,7 @@ export default function Navbar() {
           onClick={() => setIsOpen(!isOpen)}
           className="text-white focus:outline-none md:hidden"
         >
-          <div className="flex flex-col justify-center items-center h-7 w-7 space-y-1">
+          <div className="flex flex-col justify-center items-center h-7 w-7 space-y-1 cursor-pointer">
             <span className={`block h-0.5 w-6 bg-white transition-transform duration-300 ${isOpen ? 'rotate-45 translate-y-1.5' : ''}`} />
             <span className={`block h-0.5 w-6 bg-white transition-opacity duration-300 ${isOpen ? 'opacity-0' : 'opacity-100'}`} />
             <span className={`block h-0.5 w-6 bg-white transition-transform duration-300 ${isOpen ? '-rotate-45 -translate-y-1.5' : ''}`} />
@@ -75,7 +75,7 @@ export default function Navbar() {
               </Link>
             </li>
           </ul>
-          <button className="button-primary w-full">
+          <button className="button-primary w-full cursor-pointer">
             Add My Store
           </button>
         </div>
