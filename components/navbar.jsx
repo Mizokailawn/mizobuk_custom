@@ -31,13 +31,13 @@ export default function Navbar() {
           onClick={() => setIsOpen(!isOpen)}
           className="text-white focus:outline-none md:hidden"
         >
-          {/*<div className="space-y-1 h-10 w-10 items-center">
+          <div className="flex flex-col justify-center items-center h-7 w-7 space-y-1">
             <span className={`block h-0.5 w-6 bg-white transition-transform duration-300 ${isOpen ? 'rotate-45 translate-y-1.5' : ''}`} />
             <span className={`block h-0.5 w-6 bg-white transition-opacity duration-300 ${isOpen ? 'opacity-0' : 'opacity-100'}`} />
             <span className={`block h-0.5 w-6 bg-white transition-transform duration-300 ${isOpen ? '-rotate-45 -translate-y-1.5' : ''}`} />
-          </div>*/}
+          </div>
 
-          <svg
+          {/*<svg
             className="w-6 h-6"
             fill="none"
             stroke="currentColor"
@@ -49,7 +49,7 @@ export default function Navbar() {
               strokeWidth={2}
               d="M4 6h16M4 12h16M4 18h16"
             />
-          </svg>
+          </svg>*/}
         </button>
       </div>
 
