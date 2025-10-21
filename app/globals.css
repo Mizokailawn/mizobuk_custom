@@ -2,7 +2,8 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
+  --font: var(--font-arial);
 }
 
 @theme inline {
@@ -14,7 +15,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
   }
 }
@@ -24,3 +25,63 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* 🌟 Neon Orange Theme for MizoBuk */
+@layer components {
+  /* Accent colors */
+  .text-neon-orange {
+    @apply text-[#ff6b35];
+  }
+
+  .bg-neon-orange {
+    @apply bg-[#ff6b35];
+  }
+
+  .border-neon-orange {
+    @apply border-[#ff6b35];
+  }
+
+  /* Glowing neon shadow */
+  .shadow-neon {
+    box-shadow: 0 0 12px rgba(255, 107, 53, 0.6),
+                0 0 20px rgba(255, 107, 53, 0.3);
+  }
+
+  /* Neon button */
+  .btn-neon {
+    @apply bg-[#ff6b35] text-white font-semibold px-4 py-2 rounded-full transition-transform duration-300;
+    box-shadow: 0 0 12px rgba(255, 107, 53, 0.6);
+  }
+
+  .btn-neon:hover {
+    @apply scale-105;
+    box-shadow: 0 0 20px rgba(255, 107, 53, 0.8);
+  }
+
+  /* Card with neon border and subtle glow */
+  .card-neon {
+    @apply bg-[#7e7676] border border-[#ff6b35] rounded-2xl p-5 transition duration-300;
+    box-shadow: 0 0 10px rgba(255, 107, 53, 0.25) text-orange-500;
+  }
+
+  .card-neon:hover {
+    box-shadow: 0 0 20px rgba(255, 107, 53, 0.5);
+  }
+
+  /* Neon divider line */
+  .divider-neon {
+    @apply h-[2px] w-full bg-gradient-to-r from-transparent via-[#ff6b35] to-transparent;
+  }
+
+  /* Neon background section */
+  .bg-dark-neon {
+    @apply bg-[#0d0d0d] text-gray-100;
+  }
+
+  .button-primary {
+    @apply bg-[#ff6b35] text-gray-900 font-bold py-2 px-4 rounded-full border-[#ff6b35] border-2 hover:bg-orange-400 hover:scale-110 transition-transform duration-300;
+  }
+}
+
+
+
